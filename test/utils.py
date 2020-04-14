@@ -3,8 +3,6 @@ from __future__ import division
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
-from sklearn.metrics import mean_squared_error
-from hausdorff import hausdorff_distance
 from math import sqrt
 import logging
 import numpy as np
