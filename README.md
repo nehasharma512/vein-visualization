@@ -48,4 +48,4 @@ python evaluate_model.py
 ### Vein enhancement
 - The reconstructed and ground truth hyperspectral images can be visualized in MATLAB using commands: `load(‘y.mat’);`,`imshow(rad(:,:,1),[]);`
 - The reconstructed band can be enhanced using two enhancement techniques: Contrast Limited Adaptive Histogram Equalization (CLAHE) and Homomorphic Filtering.
-- Code for both algorithms present in `./vein_enhancement/`.
+- Enhancement can be produced using file `./vein_enhancement/enhance.m`.
