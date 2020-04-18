@@ -29,7 +29,8 @@ cd vein-visualization
 - Increase the training data using augmentation techniques (rotation and flipping). The matlab file `./train/augment_data.m` is used to perform augmentaion.
 - The dataset is stored in HDF5 (`.h5`) file for training process. The matlab file `./train/generate_paired_rgb_nbands.m` is used to generate `train.h5` and `valid.h5` dataset files.
 
-### train/test  
+### Train/Test  
+The training and testing codes are present in `./train/` and `./test/` folders respectively. The model architecture is present in `resblock.py` file.
 - Train a model:
 ```bash
 #!./train/train.py
@@ -42,6 +43,9 @@ python train.py
 #!./test/evaluate_model.py
 python evaluate_model.py
 ```
-- The test results will be saved to the folder: `./dataset/test_data/inference/`.
+- The pre-trained models are present in `./test/models/`. The model can be evaluated on the testing dataset present in `./dataset/test_data/rgb/`. The test results will be saved to the folder: `./dataset/test_data/inference/`.
 
-
+### Vein enhancement
+- The reconstructed and ground truth hyperspectral images can be visualized in MATLAB using commands: `load(‘y.mat’);`,`imshow(rad(:,:,1),[]);`
+- The reconstructed band can be enhanced using two enhancement techniques: Contrast Limited Adaptive Histogram Equalization (CLAHE) and Homomorphic Filtering.
+- Code for both algorithms present in `./vein_enhancement/`.
