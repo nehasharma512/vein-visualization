@@ -49,3 +49,25 @@ python evaluate_model.py
 - The reconstructed and ground truth hyperspectral images can be visualized in MATLAB using commands: `load(‘y.mat’);`,`imshow(rad(:,:,1),[]);`
 - The reconstructed band can be enhanced using two enhancement techniques: Contrast Limited Adaptive Histogram Equalization (CLAHE) and Homomorphic Filtering.
 - Enhancement can be produced using file `./vein_enhancement/enhance.m`.
+
+## Citation
+If you use this code for your research, please cite our paper.
+```
+@inproceedings{10.1145/3339825.3391861,
+author = {Sharma, Neha and Hefeeda, Mohamed},
+title = {Hyperspectral Reconstruction from RGB Images for Vein Visualization},
+year = {2020},
+isbn = {9781450368452},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3339825.3391861},
+doi = {10.1145/3339825.3391861},
+booktitle = {Proceedings of the 11th ACM Multimedia Systems Conference},
+pages = {77–87},
+numpages = {11},
+keywords = {vein visualization, hyperspectral imaging},
+location = {Istanbul, Turkey},
+series = {MMSys ’20}
+}
+
+```
