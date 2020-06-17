@@ -51,7 +51,7 @@ python evaluate_model.py
 - Enhancement can be produced using file `./vein_enhancement/enhance.m`.
 
 ## Citation
-If you use this code for your research, please cite our paper.
+If you use our code or dataset for your research, please cite our paper.
 ```
 @inproceedings{10.1145/3339825.3391861,
 author = {Sharma, Neha and Hefeeda, Mohamed},
